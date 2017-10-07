@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terminos_ycondiciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.com.devare.coppelstore.controlador.activitys.TerminosYCondiciones">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".3"
+       android:layout_marginBottom="16dp"
+        android:text="@string/label_tv_terminos_y_condiciones"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/tv_info_terminos_condiciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_tv_terminos_condiciones" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_terminos_rechazar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/label_btn_rechazar"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_terminos_aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bk_boton_selector"
+            android:textColor="@color/colorBlanco"
+            android:text="@string/label_btn_aceptar"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

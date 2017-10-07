@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Coppel Store</string>
+    <!--SplashScreen-->
+    <string name="info_iv">Descripción de la imágen</string>
+    <string name="label_tv_slogan">Mejora tu vida</string>
+    <string name="label_tv_nombre">Store</string>
+
+    <!--TerminosYCondiciones-->
+    <string name="info_tv_terminos_condiciones">
+
+        <b>Condiciones de uso</b>\n\n
+
+        Por favor lea cuidadosamente estas condiciones de uso (en adelante "Términos") antes de acceder, navegar, comprar y/o hacer uso de cualquier
+        parte de esta aplicación (en adelante "Aplicación"). \n\n
+        Estos Términos se aplican a todas las visitas a la Aplicación y usos del mismo, así como al contenido,
+        concursos y los servicios que se proporcionan en él o a través de él. Al acceder a  la  Aplicación y hacer uso de ella, usted (en adelante el "Usuario")
+        manifiesta que está de acuerdo totalmente con los Términos, así mismo con todas las demás leyes o regulaciones aplicables al Sitio.\n\n
+        Si no está de acuerdo totalmente con estos Términos, no haga uso de la Aplicación.\n\n
+
+ <b>Identidad del titular del sitio web</b>\n\n
+
+        La compañía titular del Sitio es COPPEL S.A. DE C.V. (en adelante "La Compañía"), domiciliada en la calle República #2859 Pte.,
+        Col. Recursos Hidráulicos, Culiacán, Sinaloa, con número de teléfono (52) 66 77 59 42 00 y dirección de correo electrónico informacion@coppel.com.\n\n
+
+<b>Aceptación de las condiciones de uso</b>\n\n
+
+        Los presentes Términos regulan el uso del Sitio, sus contenidos, concursos y servicios que La Compaña pone gratuitamente a disposición del público
+        en la presente URL.\n\n
+
+        La utilización del sitio Web por un tercero le atribuye la condición de Usuario y supone la aceptación plena por dicho Usuario, de todas y cada una
+        de las condiciones que se incorporan en las presentes Condiciones de Uso.\n\n
+
+        La Compañía puede ofrecer a través del Sitio contenidos, concursos, sorteos, servicios o productos que podrán encontrarse sometidos a condiciones particulares
+        propias que, según los casos, sustituyen, completan y/o modifican las presentes Condiciones y sobre las cuales se informará al Usuario en cada caso concreto.\n\n
+
+        El Sitio contiene diferentes concursos y sorteos en los que La Compañía invita a los usuarios registrados a presentar contenidos
+        generados por los propios usuarios, según sea el caso. Los usuarios deben cumplir y aceptar en su totalidad las Reglas
+        especificadas para cada concurso o promoción, donde se indicará; la duración, premios, ganadores, legitimación para participar y
+        mecánica del concurso o promoción aplicable. Para consultar información sobre las Reglas aplicables a cada promoción o concurso, acceda a Coppel.com.\n\n
+
+        El usuario acepta ser el único responsable de cualquier material publicado o sometido por el usuario. El usuario manifiesta y garantiza
+        que posee o controla todos los derechos a la documentación presentada y que ningún uso de dicho material por COPPEL infringe o viola derechos de terceros.\n\n
+
+        El usuario acepta defender, indemnizar y mantener a COPPEL y sus empresas filiales, agentes, representantes, empleados, funcionarios, directores, licenciatarios,
+        patrocinadores, socios, proveedores y contratistas (conjuntamente, los "Afiliados") de y contra cualquier reclamación, responsabilidades, daños, costos y gastos
+        (incluyendo honorarios razonables de abogados y costos legales) que surjan de o en conexión con cualquier material publicado o sometido por el usuario. La compañía
+        se reserva el derecho en cualquier momento y a su sola discreción, de borrar, mover o editar cualquier material publicado o sometido por el usuario.\n\n
+
+        Al participar en las encuestas, sorteos, concursos o promociones en este sitio y/o solicitud de información promocional o actualizaciones de productos el usuario acepta
+        que COPPEL puede utilizar la información sobre el usuario para la comercialización, desarrollo de productos y con fines promocionales. y/o se ajuste a los términos
+        de Privacidad de COPPEL de la Política de Privacidad. \n\n
+
+        Además, el usuario acepta que COPPEL pueda enviar correos electrónicos con el fin de informar de las novedades
+        sobre productos, servicios o para otros fines que COPPEL estime conveniente. La información sobre el usuario de ninguna manera será revelada.\n\n
+
+        El usuario está de acuerdo y otorga su consentimiento expreso para que COPPEL utilice sus datos personales, de conformidad con los artículos aplicables de la Ley de
+        Protección de Datos Personales en Posesión de los Particulares y los aplicables de la Ley Federal de Protección al Consumidor.\n\n
+    </string>
+    <string name="label_btn_rechazar">Rechazar</string>
+    <string name="label_btn_aceptar">Aceptar</string>
+    <string name="label_tv_terminos_y_condiciones">Términos y condiciones</string>
+
+    <!--Login-->
+    <string name="label_btn_iniciar_sesion_con_facebook">Iniciar sesión con Facebook</string>
+    <string name="label_btn_ingresar">Ingresar</string>
+    <string name="label_btn_registrate">Regístrate</string>
+    <string name="label_tv_modo_sesion">o ingresa tu correo y contraseña</string>
+    <string name="label_rbtn_no_cerrar_sesion">No cerrar sesión</string>
+    <string name="label_tv_olvido_contrasena"><u>¿Haz olvidado tu contraseña?</u> </string>
+    <string name="hint_et_login_password">Introduce el password</string>
+    <string name="hint_et_login_usuario">Introduce el usuario</string>
+
+    <!--activity_registro_usuario-->
+    <string name="label_registro">Registro</string>
+    <string name="hint_registro_usuario">Introduce el usuario</string>
+    <string name="hint_registro_password">Introduce el password</string>
+    <string name="hint_registro_confirmar_password">Confirmar password</string>
+    <string name="hint_registro_nombres">Nombre(s)</string>
+    <string name="hint_registro_apellido_paterno">Apellido Paterno</string>
+    <string name="hint_registro_ap_materno">Apellido Materno</string>
+    <string name="hint_registro_correo_electronico">Correo Electrónico</string>
+    <string name="hint_registro_numero_telefonico">Número Teléfonico</string>
+    <string name="hint_resgistro_sexo">Sexo:</string>
+    <string name="hint_sexo_hombre">Hombre</string>
+    <string name="hint_sexo_mujer">Mujer</string>
+    <string name="label_btn_registro__registrar">Registrar</string>
+    <string name="hint_registro_fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="label_btn_registro_agregar_fecha">+</string>
+
+    <!--RegistroUsuarioActivity.java-->
+    <string name="genero_hombre">Hombre</string>
+    <string name="genero_mujer">Mujer</string>
+    <string name="msj_error_contrasenas">Las contraseñas deben coincidir</string>
+    <string name="msj_error_nombre">Introduce un nombre válido</string>
+    <string name="msj_error_ap_paterno">Introduce un apellido paterno válido</string>
+    <string name="msj_error_ap_materno">Introduce un apellido materno válido</string>
+    <string name="msj_error_fecha_nacimiento">Debes seleccionar una fecha de nacimiento</string>
+    <string name="msj_error_sexo">Debes seleccionar el sexo</string>
+    <string-array name="nombre_array">
+        <item>Aaron</item>
+        <item>Abel</item>
+        <item>Abraham</item>
+        <item>Abril</item>
+        <item>Alfonso</item>
+        <item>Alonso</item>
+        <item>Beatriz</item>
+        <item>Belén</item>
+        <item>Belinda</item>
+        <item>Carina</item>
+        <item>Carlos</item>
+        <item>César</item>
+        <item>Claudia</item>
+        <item>Daniel</item>
+        <item>David</item>
+        <item>Diana</item>
+        <item>Diego</item>
+        <item>Elisabeth</item>
+        <item>Eric</item>
+        <item>Esperanza</item>
+        <item>Estefania</item>
+        <item>Fernando</item>
+        <item>Francisco</item>
+        <item>Gabriel</item>
+        <item>Gregorio</item>
+        <item>Gabriela</item>
+        <item>Helna</item>
+        <item>Horacio</item>
+        <item>Hugo</item>
+        <item>Inés</item>
+        <item>Isaías</item>
+        <item>Israel</item>
+        <item>Javier</item>
+        <item>Jessica</item>
+        <item>Jesús</item>
+        <item>José</item>
+        <item>José Carlos</item>
+        <item>José Angel</item>
+        <item>Josué</item>
+        <item>Juan</item>
+        <item>Juan Carlos</item>
+        <item>Juana</item>
+        <item>Julio</item>
+
+    </string-array>
+
+    <string-array name="apellidos_array">
+        <item>García</item>
+        <item>López</item>
+        <item>Pérez</item>
+        <item>González</item>
+        <item>Sánchez</item>
+        <item>Martínez</item>
+        <item>Rodriguez</item>
+        <item>Fernández</item>
+        <item>Gómez</item>
+        <item>Martín</item>
+        <item>Hernández</item>
+        <item>Díaz</item>
+        <item>Álvarez</item>
+        <item>Jiménez</item>
+        <item>Romero</item>
+        <item>Sanz</item>
+        <item>Flores</item>
+        <item>Morales</item>
+        <item>Blanco</item>
+        <item>Santos</item>
+        <item>Ortega</item>
+        <item>Castillo</item>
+        <item>Delgado</item>
+        <item>Márquez</item>
+        <item>Herrera</item>
+        <item>Rojas</item>
+        <item>Serrano</item>
+        <item>Fierro</item>
+    </string-array>
+
+    <string name="validate_campo_vacio">Campo Vacío!</string>
+    <!--custom_toast.xml-->
+    <string name="contenido_toast">Mensaje a mostrar en el Toast &#8230;</string>
+    <string name="iv_descripcion_imagen">Descripción de la Imágen</string>
+
+</resources>

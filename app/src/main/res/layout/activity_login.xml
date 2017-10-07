@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="mx.com.devare.coppelstore.controlador.activitys.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dialog_body"
+            android:paddingEnd="@dimen/dialog_body"
+            android:paddingStart="@dimen/dialog_body">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/info_iv"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <Button
+                android:id="@+id/btn_iniciar_sesion_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/bk_boton_selector"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/label_btn_iniciar_sesion_con_facebook"
+                android:textColor="@color/colorBlanco" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_between"
+                android:layout_marginTop="@dimen/padding_between"
+                android:gravity="center"
+                android:text="@string/label_tv_modo_sesion" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_login_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_login_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_et_login_usuario"
+
+                    android:inputType="textAutoComplete" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_et_login_password"
+                    android:inputType="textPassword"
+                    android:maxLength="8" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioButton
+                android:id="@+id/rbtn_login_guardar_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_rbtn_no_cerrar_sesion" />
+
+            <Button
+                android:id="@+id/btn_iniciar_sesion_interna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_selector"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/label_btn_ingresar"
+                android:textColor="@color/colorBlanco" />
+
+            <Button
+                android:id="@+id/btn_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_selector"
+                android:paddingBottom="@dimen/button_padding"
+                android:paddingTop="@dimen/button_padding"
+                android:text="@string/label_btn_registrate"
+                android:textColor="@color/colorBlanco" />
+
+            <TextView
+                android:id="@+id/tv_link_restaurar_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColorLink="@color/colorAccent"
+                android:text="@string/label_tv_olvido_contrasena"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
