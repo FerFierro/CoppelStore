@@ -10,11 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mx.com.devare.coppelstore.controlador.activitys.MainActivity">
 
-    <ListView
-        android:id="@+id/lista_productos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recycler_lista_productos"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:listitem="@layout/item_lists_producto">
 
-    </ListView>
+   </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
