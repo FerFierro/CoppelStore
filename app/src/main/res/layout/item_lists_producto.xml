@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    card_view:cardElevation="8dp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,40 +22,90 @@
             android:src="@drawable/ic_plantilla_producto" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-80dp"
-
-            android:background="#c1fddc2f"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tv_item_precio_producto"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
-                tools:text="$5,699.00 MXM" />
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_item_precio_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="35sp"
+                    android:gravity="end"
+                    android:layout_weight=".3"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:text="$4,999"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text=" MXN de \n contado"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_pago_quincenal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                tools:text="Desde $196 quincenal"/>
 
             <TextView
                 android:id="@+id/tv_item_nombre_producto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
-                tools:text="Lap-top" />
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#111111"
+                tools:text="Laptop HP 18"/>
 
             <TextView
                 android:id="@+id/tv_item_stock_producto"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="-40dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="30sp"
+                android:textSize="17sp"
                 android:textStyle="bold"
-                tools:text="50" />
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                tools:text="17 pzas"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_accion_mostrar_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="Mostrar Detalle"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btn_accion_agregar_carrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlanco"
+                android:background="@drawable/bk_boton_selector"
+                android:text="Agregar al carrito"/>
 
         </LinearLayout>
 

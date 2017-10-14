@@ -43,8 +43,9 @@ public class AdaptadorProductos extends RecyclerView.Adapter<AdaptadorProductos.
         Producto mProducto = mProductoList.get(position);
         Glide.with(mContext).load(mProducto.getUriImagen()).into(holder.iv_item_producto);
         holder.tv_item_nombre_producto.setText(mProducto.getNombre());
-        holder.tv_item_precio_producto.setText(mProducto.getPrecio());
-        holder.tv_item_stock_producto.setText(mProducto.getStock());
+        holder.tv_item_precio_producto.setText("$"+mProducto.getPrecio()+".00");
+        holder.tv_item_pago_quincenal.setText("Desde $196.00 MXN quincenal");
+        holder.tv_item_stock_producto.setText(mProducto.getStock()+" Pzas");
 
     }
 
@@ -63,12 +64,13 @@ public class AdaptadorProductos extends RecyclerView.Adapter<AdaptadorProductos.
 
     public class ViewHolderProducto extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView iv_item_producto;
-        TextView tv_item_precio_producto, tv_item_nombre_producto, tv_item_stock_producto;
+        TextView tv_item_precio_producto, tv_item_nombre_producto, tv_item_stock_producto,tv_item_pago_quincenal;
 
         public ViewHolderProducto(View itemView) {
             super(itemView);
 
             iv_item_producto = (ImageView) itemView.findViewById(R.id.iv_item_producto);
+            tv_item_pago_quincenal = (TextView) itemView.findViewById(R.id.tv_item_pago_quincenal);
             tv_item_precio_producto = (TextView) itemView.findViewById(R.id.tv_item_precio_producto);
             tv_item_nombre_producto = (TextView) itemView.findViewById(R.id.tv_item_nombre_producto);
             tv_item_stock_producto = (TextView) itemView.findViewById(R.id.tv_item_stock_producto);

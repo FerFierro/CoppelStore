@@ -1,6 +1,8 @@
 package mx.com.devare.coppelstore.controlador.activitys;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.preference.Preference;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -13,9 +15,22 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.VolleyError;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import mx.com.devare.coppelstore.R;
+import mx.com.devare.coppelstore.modelo.DBSourceData;
+import mx.com.devare.coppelstore.modelo.Producto;
+import mx.com.devare.coppelstore.modelo.Utilidades.Constantes;
 import mx.com.devare.coppelstore.modelo.customs.CustomViews;
 import mx.com.devare.coppelstore.modelo.preferences.Preferences;
+import mx.com.devare.coppelstore.modelo.volley.SolicitudesJSON;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,8 +40,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     RadioButton rbtn_login_guardar_sesion;
     TextView tv_link_restaurar_contrasena;
 
-    public static final int REQUEST_CODE = 1;
 
+    public static final int REQUEST_CODE = 1;
 
     CustomViews toast;
     boolean estadoTYC;
@@ -39,6 +54,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         verificarEstadoTYC();
         setContentView(R.layout.activity_login);
         toast = new CustomViews(this);
+
         iniciarComponentesUI();
         inicializarSetOnClickListener();
         isActivateRadioButton = rbtn_login_guardar_sesion.isChecked();//se va ha guardar desactivado
@@ -51,8 +67,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-
     private void iniciarComponentesUI() {
+
         //Buttons
         btn_iniciar_sesion_facebook = (Button) findViewById(R.id.btn_iniciar_sesion_facebook);
         btn_iniciar_sesion_interna = (Button) findViewById(R.id.btn_iniciar_sesion_interna);
@@ -142,6 +158,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
+
+
 
     private void actividadSiguiente() {
         Intent mIntent = new Intent(this, MainActivity.class);
